@@ -12,9 +12,13 @@ Total Amount
 Due Date
 
 ✅ Uses Google Cloud Vision API for text extraction.
+
 ✅ Converts PDF invoices to images before processing.
+
 ✅ Provides a Flask API for backend processing.
+
 ✅ Includes a Streamlit-based UI for file upload & result display.
+
 ✅ Deployable on Streamlit Cloud or any cloud platform.
 
 ### 1. Setup Google Cloud Vision API
@@ -81,7 +85,6 @@ file	File	Invoice PDF file
 Response:
 
 ```json
-json
 {
     "Invoice_date": "01/02/23",
     "Invoice_number": "123456789",
@@ -122,5 +125,4 @@ Feel free to contribute by submitting a pull request! 🤝
 
 ### 9. License
 
-MIT License
 This project is licensed under the MIT License.
