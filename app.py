@@ -65,4 +65,4 @@ def extract_invoice():
     return jsonify(invoice_details)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)  # Change to port 5001
