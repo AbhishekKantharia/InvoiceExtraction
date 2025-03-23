@@ -1,1 +1,6 @@
-
+flask
+google-cloud-vision
+pdf2image
+pytesseract
+streamlit
+requests
