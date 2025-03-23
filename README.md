@@ -7,8 +7,11 @@ This project provides an API to extract key details from invoices using Google C
 ✅ Extracts the following details from an invoice:
 
 Invoice Date
+
 Invoice Number
+
 Total Amount
+
 Due Date
 
 ✅ Uses Google Cloud Vision API for text extraction.
