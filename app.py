@@ -8,8 +8,12 @@ import pytesseract
 # Initialize Flask App
 app = Flask(__name__)
 
-# Set Google API Key from Environment
-os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+# Set Google API Key from Environment Variable
+GOOGLE_CREDENTIALS_PATH = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+if not GOOGLE_CREDENTIALS_PATH:
+    raise ValueError("GOOGLE_APPLICATION_CREDENTIALS environment variable is not set.")
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = GOOGLE_CREDENTIALS_PATH
 
 # Initialize Google Vision Client
 vision_client = vision.ImageAnnotatorClient()
