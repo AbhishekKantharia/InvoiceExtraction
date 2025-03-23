@@ -9,7 +9,7 @@ import pytesseract
 app = Flask(__name__)
 
 # Set Google API Key from Environment
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "path_to_your_service_account.json"
+os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 # Initialize Google Vision Client
 vision_client = vision.ImageAnnotatorClient()
