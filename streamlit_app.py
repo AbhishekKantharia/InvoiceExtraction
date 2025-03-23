@@ -9,7 +9,7 @@ if uploaded_file is not None:
     files = {"file": uploaded_file.getvalue()}
     
     # Send request to Flask API
-    response = requests.post("http://127.0.0.1:5000/extract-invoice", files=files)
+    response = requests.post("http://127.0.0.1:5001/extract-invoice", files=files)
 
     if response.status_code == 200:
         st.json(response.json())
